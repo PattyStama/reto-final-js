@@ -11,6 +11,7 @@
     
     <section class="main-container">
         <div class="ingresos-container">
+            <h2>Ingresos</h2>
             <form>
                 <label for="Inputmensual">Ingrese su salario mensual</label>
                 <input type="number" id="Inputmensual"/>
@@ -18,14 +19,29 @@
                 <h4 id="inganual"></h4>
             </form>
         </div>
-    </section>
-
-    <section>
-        <div>
+    
+        <div class="gastos-container">
             <h2>Gastos mensuales</h2>
             <form>
-                <label for="Inputmensual">Ingrese cuanto gasta en </label>
-                <input type="number" id="Inputmensual"/>
+                <label for="Inputcasa">Alquiler </label>
+                <input type="number" id="Inputcasa"/>
+                <label for="Inputcel">Teléfono </label>
+                <input type="number" id="Inputcel"/>
+                <label for="Inputluz">Luz </label>
+                <input type="number" id="Inputluz"/>
+                <label for="Inputwater">Agua </label>
+                <input type="number" id="Inputwater"/>
+                <label for="Inputinter">Internet </label>
+                <input type="number" id="Inputinter"/>
+                <label for="Inputgas">Gasolina </label>
+                <input type="number" id="Inputgas"/>
+                <label for="Inputfood">Comida </label>
+                <input type="number" id="Inputfood"/>
+                <label for="Inputmed">Medicos </label>
+                <input type="number" id="Inputmed"/>
+                <button type="button" class="btn-gastos" onclick="calcularGastos()">Calcular</button>
+                <h5 id="gastoscal"></h5>
+                <p id="endeudamiento"></p>
             </form>
         </div>
     </section>
